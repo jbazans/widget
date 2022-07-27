@@ -1,0 +1,22 @@
+{
+  "titleColabs": {
+    "type": "text",
+    "label": "Título",
+    "value": "Mis colaboradores"
+  },
+  "durationAnimation": {
+    "type": "number",
+    "label": "Duración de animación",
+    "value": 10
+  },
+  "borderColor": {
+    "type": "colorpicker",
+    "label": "Color de borde",
+    "value": "#2850c7cc"
+  },
+  "backgroundColor": {
+    "type": "colorpicker",
+    "label": "Color de fondo",
+    "value": "#01030ecc"
+  }
+}

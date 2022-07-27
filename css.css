@@ -1,0 +1,89 @@
+/*
+		tiempo: 10;
+		borde: #2850c7cc;
+		fondo: #01030ecc;
+		*/
+		:root{
+		  	--animation-time: {{durationAnimation}}s;
+		  	--border-color: {{borderColor}};
+		  	--background-color: {{backgroundColor}};
+		}
+		*{
+			box-sizing: border-box;
+			font-family: 'Yatra One', cursive;
+		}
+		.text-title *{
+			margin: 0;
+			padding: 0;
+			margin-bottom: 5px;
+			color: #fff;
+			text-shadow: 3px 0px 3px #000,
+							-3px 0px 3px #000,
+							0px -3px 3px #000,
+							0px 3px 3px #000;
+		}
+		.size-box{
+			width: 310px;
+		}
+		.main-box{
+			overflow: hidden;
+			width: 100%;
+			height: 70px;
+			background-color: var(--background-color);
+			border-radius: 5px;
+			animation-name: example;
+  			animation-duration: var(--animation-time);
+  			animation-iteration-count: infinite;
+			position: relative;
+			display: flex;
+			padding: 5px;
+			border: 5px var(--border-color) solid;
+		}
+		@keyframes example{
+		  	0% {filter: hue-rotate(0deg);}
+		  	50% {filter: hue-rotate(-40deg);}
+		  	100% {filter: hue-rotate(0deg);}
+		}
+		.img-sub{
+			width: 50px;
+			height: 100%;
+			top: -60px;
+			position: absolute;
+			animation-name: img-sub;
+  			animation-duration: var(--animation-time);
+  			animation-iteration-count: infinite;
+			position: relative;
+		}
+		@keyframes img-sub{
+		  	0% {top: -60px;}
+		  	10% {top: -60px;}
+		  	20% {top: 0px;}
+		  	70% {top: 0px;}
+		  	80% {top: -60px;}
+		  	100% {top: -60px;}
+		}
+		.img-sub img{
+			width: 100%;
+			height: 100%;
+		}
+		.name-sub{
+			color: #fff;
+			animation-name: name-sub;
+  			animation-duration: var(--animation-time);
+  			animation-iteration-count: infinite;
+			position: relative;
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			margin-left: 10px;
+			font-size: 18px;
+			width: calc(100% - 50px);
+		}
+		@keyframes name-sub{
+		  	0% {opacity: 0;}
+		  	10% {opacity: 0;}
+		  	20% {opacity: 1;}
+		  	70% {opacity: 1;}
+		  	80% {opacity: 0;}
+		  	100% {opacity: 0;}
+		}

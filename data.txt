@@ -1,0 +1,1 @@
+{"titleColabs":"Mis colaboradores","durationAnimation":10,"borderColor":"#2850c7cc","backgroundColor":"#01030ecc"}
